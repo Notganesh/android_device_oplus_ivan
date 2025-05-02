@@ -19,5 +19,9 @@ DEVICE_PATH := device/oplus/ivan
 # Inherit from oplus mt6877-common
 include device/oplus/mt6877-common/BoardConfigCommon.mk
 
+# Init
+TARGET_INIT_VENDOR_LIB ?= //$(DEVICE_PATH):init_ivan
+TARGET_RECOVERY_DEVICE_MODULES ?= init_ivan
+
 # Call proprietary blob setup
 include vendor/oplus/ivan/BoardConfigVendor.mk

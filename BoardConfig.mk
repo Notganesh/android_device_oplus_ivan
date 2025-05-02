@@ -20,6 +20,7 @@ DEVICE_PATH := device/oplus/ivan
 include device/oplus/mt6877-common/BoardConfigCommon.mk
 
 TARGET_2ND_ARCH_VARIANT := armv8-2a
+TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x2000U
 
 # Init
 TARGET_INIT_VENDOR_LIB ?= //$(DEVICE_PATH):init_ivan

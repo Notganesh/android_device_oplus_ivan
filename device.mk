@@ -19,6 +19,9 @@ DEVICE_PATH := device/oplus/ivan
 # Inherit from ossi device
 $(call inherit-product, device/oplus/mt6877-common/common.mk)
 
+PRODUCT_PACKAGES += \
+    libldacBT_bco
+
 # Overlays
 PRODUCT_PACKAGES += \
     FrameworkResOverlayivan \
